@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Triangle View Controller-->
         <scene sceneID="t2I-QH-ctC">
             <objects>
-                <viewController id="Bop-rm-HI4" sceneMemberID="viewController">
+                <viewController id="Bop-rm-HI4" customClass="TriangleViewController" customModule="AreaHelperTwo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BB8-zo-qSE">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -189,10 +189,10 @@
             </objects>
             <point key="canvasLocation" x="-59.420289855072468" y="759.375"/>
         </scene>
-        <!--View Controller-->
+        <!--Rectangle View Controller-->
         <scene sceneID="2tU-fK-sMO">
             <objects>
-                <viewController id="Y8s-0C-Ha6" sceneMemberID="viewController">
+                <viewController id="Y8s-0C-Ha6" customClass="RectangleViewController" customModule="AreaHelperTwo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AhP-m7-Njn">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

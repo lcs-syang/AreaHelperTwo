@@ -12,6 +12,8 @@
 		F7161BAE23635F0800178E22 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7161BAC23635F0800178E22 /* Main.storyboard */; };
 		F7161BB023635F0C00178E22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7161BAF23635F0C00178E22 /* Assets.xcassets */; };
 		F7161BB323635F0C00178E22 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7161BB123635F0C00178E22 /* LaunchScreen.storyboard */; };
+		F7161BBB2363615500178E22 /* RectangleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7161BBA2363615500178E22 /* RectangleViewController.swift */; };
+		F76AD2562364D2080030526D /* TriangleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76AD2552364D2080030526D /* TriangleViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		F7161BAF23635F0C00178E22 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F7161BB223635F0C00178E22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F7161BB423635F0C00178E22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7161BBA2363615500178E22 /* RectangleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleViewController.swift; sourceTree = "<group>"; };
+		F76AD2552364D2080030526D /* TriangleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriangleViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				F7161BAF23635F0C00178E22 /* Assets.xcassets */,
 				F7161BB123635F0C00178E22 /* LaunchScreen.storyboard */,
 				F7161BB423635F0C00178E22 /* Info.plist */,
+				F7161BBA2363615500178E22 /* RectangleViewController.swift */,
+				F76AD2552364D2080030526D /* TriangleViewController.swift */,
 			);
 			path = AreaHelperTwo;
 			sourceTree = "<group>";
@@ -135,7 +141,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F76AD2562364D2080030526D /* TriangleViewController.swift in Sources */,
 				F7161BAB23635F0800178E22 /* ViewController.swift in Sources */,
+				F7161BBB2363615500178E22 /* RectangleViewController.swift in Sources */,
 				F7161BA923635F0800178E22 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
