@@ -10,6 +10,7 @@ import UIKit
 
 class TriangleViewController: UIViewController {
     
+    // add outlets to the view controller, connect base, height, and result label
     @IBOutlet weak var baseInput: UITextField!
     @IBOutlet weak var heightInput: UITextField!
     @IBOutlet weak var result: UILabel!
@@ -19,6 +20,8 @@ class TriangleViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    // add outlet to the view controller, connect calculate button
+    // use guard to protect from bad user input
     @IBAction func areaOfTriangle(_ sender: Any) {
         guard let base = baseInput.text else{
             result.text = "Plase enter a value for base"
@@ -35,6 +38,7 @@ class TriangleViewController: UIViewController {
             result.text = "Please enter a number for height"
         }
         
+        // calculate area of triangle
         let area = baseNumber * heightNumber / 2
         let stringArea = String(area)
         result.text = stringArea
