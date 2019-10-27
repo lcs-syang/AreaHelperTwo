@@ -237,9 +237,12 @@
                                 <rect key="frame" x="171" y="558" width="64" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Calculate"/>
+                                <connections>
+                                    <action selector="areaOfRectangle:" destination="Y8s-0C-Ha6" eventType="touchUpInside" id="7Bi-ii-5uE"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5sw-hx-7Se">
-                                <rect key="frame" x="113" y="641" width="180" height="21"/>
+                                <rect key="frame" x="89" y="641" width="204" height="178"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -253,6 +256,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="EX2-vi-i9I"/>
                     </view>
+                    <connections>
+                        <outlet property="lengthInput" destination="Lzr-BH-DUg" id="uHS-tw-pfC"/>
+                        <outlet property="result" destination="5sw-hx-7Se" id="83z-YD-CA7"/>
+                        <outlet property="widthInput" destination="2sD-NE-ycE" id="zcP-nh-q2c"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jvy-aj-9hG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
