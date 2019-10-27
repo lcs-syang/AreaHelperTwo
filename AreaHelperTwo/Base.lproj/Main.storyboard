@@ -151,6 +151,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Calculate"/>
+                                <connections>
+                                    <action selector="areaOfCircle:" destination="lNz-pU-cc1" eventType="touchUpInside" id="qyC-XC-DHg"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gpZ-VY-lZM">
                                 <rect key="frame" x="174" y="626" width="0.0" height="0.0"/>
@@ -174,6 +177,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="e7y-m2-1RQ"/>
                     </view>
+                    <connections>
+                        <outlet property="radiusInput" destination="R4c-ow-WHU" id="plo-GD-hUp"/>
+                        <outlet property="result" destination="zsu-zl-z1p" id="rFt-I7-pNd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dTX-il-edJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
