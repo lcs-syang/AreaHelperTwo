@@ -40,7 +40,14 @@ class RectangleViewController: UIViewController {
         // calculate area of rectangle
         let area = widthNumber * lengthNumber
         let stringArea = String(area)
-        result.text = stringArea
+        // result and text
+        let message = """
+        The area of the rectangle is:
+        \(stringArea)
+        Square units
+        """
+        result.text = message
+
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {

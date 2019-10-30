@@ -32,7 +32,13 @@ class CircleViewController: UIViewController {
         let pi = 3.1415926535
         let area = pi * radiusNumber * radiusNumber
         let stringArea = String(area)
-        result.text = stringArea
+        // result and text
+        let message = """
+        The area of the circle is:
+        \(stringArea)
+        Square units
+        """
+        result.text = message
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {

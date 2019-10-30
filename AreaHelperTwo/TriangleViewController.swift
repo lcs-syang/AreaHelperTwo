@@ -41,7 +41,13 @@ class TriangleViewController: UIViewController {
         // calculate area of triangle
         let area = baseNumber * heightNumber / 2
         let stringArea = String(area)
-        result.text = stringArea
+        // result and text
+        let message = """
+        The area of the Triangle is:
+        \(stringArea)
+        Square units
+        """
+        result.text = message
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
