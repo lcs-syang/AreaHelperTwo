@@ -57,6 +57,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="8o9-Pu-1C3"/>
                     </view>
+                    <navigationItem key="navigationItem" id="fhi-B1-awr"/>
                     <connections>
                         <outlet property="baseInput" destination="Eu7-vV-atv" id="3RR-tw-NlI"/>
                         <outlet property="heightInput" destination="sDm-2h-TaA" id="XCY-5c-GGx"/>
@@ -75,33 +76,35 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2UG-3Q-NCV">
-                                <rect key="frame" x="171" y="456" width="74" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" title="Circle"/>
-                                <connections>
-                                    <segue destination="lNz-pU-cc1" kind="show" id="xmn-Sl-p4g"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="imd-1E-Pdb">
-                                <rect key="frame" x="143" y="568" width="130" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" title="Rectangle"/>
-                                <connections>
-                                    <segue destination="Y8s-0C-Ha6" kind="show" id="eri-61-vU5"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Vh-ba-p6X">
-                                <rect key="frame" x="157" y="349" width="102" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" title="Triangle"/>
-                                <connections>
-                                    <segue destination="Bop-rm-HI4" kind="show" id="EdW-W0-fJ9"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" alignment="center" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="Nhc-iA-HeI">
+                                <rect key="frame" x="123" y="349" width="130" height="264"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Vh-ba-p6X">
+                                        <rect key="frame" x="14" y="0.0" width="102" height="48"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="Triangle"/>
+                                        <connections>
+                                            <segue destination="Bop-rm-HI4" kind="show" id="EdW-W0-fJ9"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2UG-3Q-NCV">
+                                        <rect key="frame" x="28" y="108" width="74" height="48"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="Circle"/>
+                                        <connections>
+                                            <segue destination="lNz-pU-cc1" kind="show" id="xmn-Sl-p4g"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="imd-1E-Pdb">
+                                        <rect key="frame" x="0.0" y="216" width="130" height="48"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="Rectangle"/>
+                                        <connections>
+                                            <segue destination="Y8s-0C-Ha6" kind="show" id="eri-61-vU5"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                             <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Area Helper" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yfC-Vc-c39" userLabel="Area Helper">
                                 <rect key="frame" x="10" y="145" width="394" height="46"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
@@ -173,6 +176,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="e7y-m2-1RQ"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Bf1-V4-XmV"/>
                     <connections>
                         <outlet property="radiusInput" destination="R4c-ow-WHU" id="plo-GD-hUp"/>
                         <outlet property="result" destination="zsu-zl-z1p" id="rFt-I7-pNd"/>
@@ -249,6 +253,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="EX2-vi-i9I"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Pw0-6z-nVr"/>
                     <connections>
                         <outlet property="lengthInput" destination="Lzr-BH-DUg" id="uHS-tw-pfC"/>
                         <outlet property="result" destination="5sw-hx-7Se" id="83z-YD-CA7"/>
